@@ -72,17 +72,17 @@ const chrisapi = "IzumiBot"
 
 //Setting ke 2
 const nobot = "37259886749"
-const namabot = "Yusuf Botz"
+const namabot = "YUSUF BOTZ"
 
 // Setting Donasi
-const dana = "0895-0850-5352"
-const ovo = "0896-2901-5724"
+const gopay = "089629015724"
+const pulsa = "089629015724"
 const insta = "muhyusuff19"
-const github = "yusufhos"
+const github = "TianBot1"
 
 // Setting SewaBot
-const qris = "https://topindo-warehouse.id:8081/ID2021122724788_A01.png"
-const nomor = "wa.me/6289629015724"
+const qris = "https://i.ibb.co/YTZT9SS/Qris.jpg"
+const nomor = "wa.me/6285921165857"
 const tujuhhari = "5.000"
 const tigapuluhhari = "10.000"
 const setahun = "20.000"
@@ -308,40 +308,40 @@ module.exports = async(conn, msg, m, setting, store) => {
 		}
 		//{ callButton: { displayText: `Call Owner!`, phoneNumber: `+${ownerNumber}` } },
 		const buttonsDefault = [
-			{ urlButton: { displayText: `Group Yusuf Bot`, url : `https://chat.whatsapp.com/GYkMntYfBjQ4tFBBG43KKM` } },
+			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/LsNzi7PDERyB9xIlW0F8Eq2` } },
 			{ urlButton: { displayText: `Nomer Owner`, url : `https://wa.me/6289629015724` } },
 			{ quickReplyButton: { displayText: `💰 Donasi`, id: `${prefix}donate` } },
 			{ quickReplyButton: { displayText: `Script`, id: `${prefix}sc` } },
 		]
 		const button5 = [
-			{ callButton: { displayText: `Number Owner`, phoneNumber: `0896-2901-5724` } },
-			{ urlButton: { displayText: `Group Yusuf Bot`, url : `https://chat.whatsapp.com/GYkMntYfBjQ4tFBBG43KKM` } },
+			{ callButton: { displayText: `Number Owner`, phoneNumber: `0859-2116-5857` } },
+			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/LsNzi7PDERyB9xIlW0F8Eq2` } },
 			{ quickReplyButton: { displayText: `Back To Menu 🔙`, id: `${prefix}menu` } },
 		]
 		const buttonsSewa = [
-			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/GYkMntYfBjQ4tFBBG43KKM` } },
+			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/LsNzi7PDERyB9xIlW0F8Eq2` } },
 			{ urlButton: { displayText: `Nomer Owner`, url : `https://wa.me/6285921165857` } },
 			{ quickReplyButton: { displayText: `Donasi`, id: `${prefix}donate` } },
 			{ quickReplyButton: { displayText: `Menu`, id: `${prefix}menu` } },
 		]
 		const buttonsMenu = [
-			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/GYkMntYfBjQ4tFBBG43KKM` } },
-			{ urlButton: { displayText: `Nomer Owner`, url : `https://wa.me/6289629015724`` } },
+			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/LsNzi7PDERyB9xIlW0F8Eq2` } },
+			{ urlButton: { displayText: `Nomer Owner`, url : `https://wa.me/6285921165857` } },
 			{ quickReplyButton: { displayText: `Donasi`, id: `${prefix}donate` } },
 			{ quickReplyButton: { displayText: `Rules`, id: `${prefix}rules` } },
 			{ quickReplyButton: { displayText: `Premium`, id: `${prefix}daftarprem` } },
 		]
 		const buttonsDiamondFF = [
-			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/GYkMntYfBjQ4tFBBG43KKM` } },
+			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/LsNzi7PDERyB9xIlW0F8Eq2` } },
 			{ quickReplyButton: { displayText: `Format ID`, id: `${prefix}formatid` } },
 		]
 		const buttonsAllmenu = [
-		    { urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/GYkMntYfBjQ4tFBBG43KKM` } },
+		    { urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/LsNzi7PDERyB9xIlW0F8Eq2` } },
 			{ quickReplyButton: { displayText: `All Menu`, id: `${prefix}allmenu` } },
 			{ quickReplyButton: { displayText: `Rules`, id: `${prefix}rules` } },
 		]
 		const buttonsRekber = [
-			{ urlButton: { displayText: `Chat Owner`, url : `https://wa.me/6289629015724`` } },
+			{ urlButton: { displayText: `Chat Owner`, url : `https://wa.me/6285921165857` } },
 		]
         
 		const isImage = (type == 'imageMessage')
@@ -506,7 +506,7 @@ _Yakin kamu mau daftar ke premium?_
 *LIST DAFTAR PREMIUM*
 - Rp. 2.000 - 7 Hari
 - Rp. 5.000 - 1 Bulan
-- Rp. 10.000 - 1 Tahun`
+- Rp. 8.000 - 1 Tahun`
 			    conn.sendMessage(from, { caption: teks, location: { jpegThumbnail: fs.readFileSync('media/premium.jpg') }, templateButtons: button5, footer: '© Izumi - Bot', mentions: [sender] })
 			    break
 //Store Menu By Christian ID
@@ -635,7 +635,7 @@ case prefix+'infobot':
       var caption = `*[ INFO YUSUF BOTZ ]*
 
 *Nama Bot :* YUSUF BOTZ
-*Name Owner :* YusufXHost
+*Name Owner :* YUSUF HOSTING
 *Nomor Bot :* wa.me/${nobot}
 *Nomor Owner :* wa.me/${ownerNumber}
 *Engine :* NodeJs
@@ -673,14 +673,14 @@ break
 			    break*/
 			case prefix+'owner':
 			    for (let x of ownerNumber) {
-			      sendContact(from, x.split('@s.whatsapp.net')[0], 'YusufXHost', msg)
+			      sendContact(from, x.split('@s.whatsapp.net')[0], 'YUSUF HOSTING', msg)
 			    }
 			    /*conn.sendMessage(from, { audio: {url : `https://b.top4top.io/m_2223iin241.mp3`}, mimetype: 'audio/mp4', ptt: true}, {quoted: msg})*/
 			    var owncuy = [
 			{ quickReplyButton: { displayText: `♨️ Instagram`, id: `${prefix}igowner` } },
 			{ quickReplyButton: { displayText: `🌐 Github`, id: `${prefix}githubown` } },
 		]
-		conn.sendMessage(from, {text: `Ingin bertanya tanya tentang apa?`, templateButtons: owncuy, footer: `My Name : YusufXHost`, mentions: [sender]} )
+		conn.sendMessage(from, {text: `Ingin bertanya tanya tentang apa?`, templateButtons: owncuy, footer: `My Name : YUSUF HOSTING`, mentions: [sender]} )
 			    break
 case prefix+'igowner':
  reply(`INSTAGRAM OWNER : @${insta}\nLINK : https://instagram.com/${insta}`)
