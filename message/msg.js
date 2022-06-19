@@ -72,17 +72,17 @@ const chrisapi = "IzumiBot"
 
 //Setting ke 2
 const nobot = "37259886749"
-const namabot = "Izumi MD"
+const namabot = "Yusuf Botz"
 
 // Setting Donasi
-const gopay = "0813-2850-7885"
-const pulsa = "0813-2850-7885"
-const insta = "chris.tianid"
-const github = "TianBot1"
+const dana = "0895-0850-5352"
+const ovo = "0896-2901-5724"
+const insta = "muhyusuff19"
+const github = "yusufhos"
 
 // Setting SewaBot
-const qris = "https://i.ibb.co/YTZT9SS/Qris.jpg"
-const nomor = "wa.me/6285921165857"
+const qris = "https://topindo-warehouse.id:8081/ID2021122724788_A01.png"
+const nomor = "wa.me/6289629015724"
 const tujuhhari = "5.000"
 const tigapuluhhari = "10.000"
 const setahun = "20.000"
@@ -354,20 +354,29 @@ module.exports = async(conn, msg, m, setting, store) => {
 		const isQuotedVideo = isQuotedMsg ? content.includes('videoMessage') ? true : false : false
 		const isQuotedSticker = isQuotedMsg ? content.includes('stickerMessage') ? true : false : false
 
-         // Anti link
-        if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
-            if (chats.match(`://chat.whatsapp.com`)) {
-                reply(`*[ GROUP LINK DETECTOR ]*\n\nSepertinya kamu mengirimkan link grup, maaf kamu akan di kick`)
-                number = sender
-      conn.groupParticipantsUpdate(from, [number], "remove")
-            }
+         // Anti link
+
+        if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
+
+            if (chats.match(`://chat.whatsapp.com`)) {
+
+                reply(`*[ GROUP LINK DETECTOR ]*\n\nSepertinya kamu mengirimkan link grup, maaf kamu akan di kick`)
+
+                number = sender
+
+      conn.groupParticipantsUpdate(from, [number], "remove")
+
+            }
+
         }
          // Anti wame
         if (isGroup && isAntiWame && !isOwner && !isGroupAdmins && isBotGroupAdmins){
             if (chats.match(/(wa.me\/)/gi)) {
                 reply(`*[ NOMOR LINK DETECTOR ]*\n\nSepertinya kamu mengirimkan link nomor, maaf kamu akan di kick`)
-                number = sender
-      conn.groupParticipantsUpdate(from, [number], "remove")
+                number = sender
+
+      conn.groupParticipantsUpdate(from, [number], "remove")
+
             }
         }
 
@@ -497,7 +506,7 @@ _Yakin kamu mau daftar ke premium?_
 *LIST DAFTAR PREMIUM*
 - Rp. 2.000 - 7 Hari
 - Rp. 5.000 - 1 Bulan
-- Rp. 8.000 - 1 Tahun`
+- Rp. 10.000 - 1 Tahun`
 			    conn.sendMessage(from, { caption: teks, location: { jpegThumbnail: fs.readFileSync('media/premium.jpg') }, templateButtons: button5, footer: '© Izumi - Bot', mentions: [sender] })
 			    break
 //Store Menu By Christian ID
@@ -623,10 +632,10 @@ case prefix+'groupizumi':
 case prefix+'infobot':
   case prefix+'inforobot':
     case prefix+'info':
-      var caption = `*[ INFO IZUMI BOT ]*
+      var caption = `*[ INFO YUSUF BOTZ ]*
 
-*Nama Bot :* Izumi - MD
-*Name Owner :* Christian ID
+*Nama Bot :* YUSUF BOTZ
+*Name Owner :* YusufXHost
 *Nomor Bot :* wa.me/${nobot}
 *Nomor Owner :* wa.me/${ownerNumber}
 *Engine :* NodeJs
@@ -649,29 +658,29 @@ break
 			    reply(`◪ DONASI
   │
   ├─ ❏ GOPAY
-  ├─ ❏ 088213292687
+  ├─ ❏ 089629015724
   ├─ ❏ OVO
-  ├─ ❏ 088213292687
+  ├─ ❏ 089629015724
   ├─ ❏ PULSA
-  ├─ ❏ 081319944917
-  ├─ ❏ PULSA2
-  ├─ ❏ 088213292687
+  ├─ ❏ 089629015724
+  ├─ ❏ DANA
+  ├─ ❏ 089508505352
   ├─ ❏ INSTAGRAM
-  └─ ❏ https://www.instagram.com/chris.tianid
+  └─ ❏ https://www.instagram.com/muhyusuff19
   
   Donasi Untuk Upgrade Ke Fitur Premium
   Note : Donasi Seikhlasnya`)
 			    break*/
 			case prefix+'owner':
 			    for (let x of ownerNumber) {
-			      sendContact(from, x.split('@s.whatsapp.net')[0], 'Christian ID', msg)
+			      sendContact(from, x.split('@s.whatsapp.net')[0], 'YusufXHost', msg)
 			    }
 			    /*conn.sendMessage(from, { audio: {url : `https://b.top4top.io/m_2223iin241.mp3`}, mimetype: 'audio/mp4', ptt: true}, {quoted: msg})*/
 			    var owncuy = [
 			{ quickReplyButton: { displayText: `♨️ Instagram`, id: `${prefix}igowner` } },
 			{ quickReplyButton: { displayText: `🌐 Github`, id: `${prefix}githubown` } },
 		]
-		conn.sendMessage(from, {text: `Ingin bertanya tanya tentang apa?`, templateButtons: owncuy, footer: `My Name : Christian`, mentions: [sender]} )
+		conn.sendMessage(from, {text: `Ingin bertanya tanya tentang apa?`, templateButtons: owncuy, footer: `My Name : YusufXHost`, mentions: [sender]} )
 			    break
 case prefix+'igowner':
  reply(`INSTAGRAM OWNER : @${insta}\nLINK : https://instagram.com/${insta}`)
@@ -1714,24 +1723,42 @@ case prefix+'add':
       reply(`Kirim perintah ${command} nomer atau balas pesan orang yang ingin dimasukkan kedalam grup`)
     }
     break
-case prefix+'antilink':
-                if (!isGroup) return reply(mess.OnlyGrup)
-                if (!isGroupAdmins && !isOwner) return reply(mess.GrupAdmin)
-                if (!isBotGroupAdmins) return reply(mess.BotAdmin)
-                if (args.length === 1) return reply(`Pilih enable atau disable\nContoh : ${prefix}antilink enable`)
-                if (args[1].toLowerCase() === 'enable'){
-                    if (isAntiLink) return reply(`Udah aktif`)
-                    antilink.push(from)
-					fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-					reply('*Antilink Grup Aktif*')
-                } else if (args[1].toLowerCase() === 'disable'){
-                    let anu = antilink.indexOf(from)
-                    antilink.splice(anu, 1)
-                    fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
-                    reply('*Antilink Grup Nonaktif*')
-                } else {
-                    reply(`Pilih enable atau disable\nContoh : ${prefix}antilink enable`)
-                }
+case prefix+'antilink':
+
+                if (!isGroup) return reply(mess.OnlyGrup)
+
+                if (!isGroupAdmins && !isOwner) return reply(mess.GrupAdmin)
+
+                if (!isBotGroupAdmins) return reply(mess.BotAdmin)
+
+                if (args.length === 1) return reply(`Pilih enable atau disable\nContoh : ${prefix}antilink enable`)
+
+                if (args[1].toLowerCase() === 'enable'){
+
+                    if (isAntiLink) return reply(`Udah aktif`)
+
+                    antilink.push(from)
+
+					fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
+
+					reply('*Antilink Grup Aktif*')
+
+                } else if (args[1].toLowerCase() === 'disable'){
+
+                    let anu = antilink.indexOf(from)
+
+                    antilink.splice(anu, 1)
+
+                    fs.writeFileSync('./database/antilink.json', JSON.stringify(antilink))
+
+                    reply('*Antilink Grup Nonaktif*')
+
+                } else {
+
+                    reply(`Pilih enable atau disable\nContoh : ${prefix}antilink enable`)
+
+                }
+
                 break
 case prefix+'antiwame':
                 if (!isGroup) return reply(mess.OnlyGrup)
@@ -2481,7 +2508,7 @@ case prefix+'igstalk':
     if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply (`Limit kamu sudah habis silahkan kirim ${prefix}limit untuk mengecek limit`)
     if (args.length < 2) return reply(`Kirim perintah ${command} Username\nContoh : ${command} chris.tianid`)
     var data = await fetchJson(`https://hardianto.xyz/api/igstalk?username=${q}&apikey=hardianto`)
-    var caption = `*[ INSTAGRAM STALK ]*\n\n👤Username : ${data.username}\n📛 Full Name : ${data.fullname}\n✔️ Verified : ${data.verified}\n👥 Followers : ${data.followers}\n🫂 Following : ${data.follow}\n🗣️ Kategori ${data.category}\n\n${readmore} *� Izumi Bot*`
+    var caption = `*[ INSTAGRAM STALK ]*\n\n👤Username : ${data.username}\n📛 Full Name : ${data.fullname}\n✔️ Verified : ${data.verified}\n👥 Followers : ${data.followers}\n🫂 Following : ${data.follow}\n🗣️ Kategori ${data.category}\n\n${readmore} *� Izumi Bot*`
     conn.sendMessage(from, {caption: caption, image: {url: data.thumbnail}}, {quoted: msg})
     limitAdd(sender, limit)
     break
