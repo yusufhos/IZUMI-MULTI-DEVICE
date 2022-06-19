@@ -308,40 +308,40 @@ module.exports = async(conn, msg, m, setting, store) => {
 		}
 		//{ callButton: { displayText: `Call Owner!`, phoneNumber: `+${ownerNumber}` } },
 		const buttonsDefault = [
-			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/LsNzi7PDERyB9xIlW0F8Eq2` } },
-			{ urlButton: { displayText: `Nomer Owner`, url : `https://wa.me/6285921165857` } },
+			{ urlButton: { displayText: `Group Yusuf Bot`, url : `https://chat.whatsapp.com/GYkMntYfBjQ4tFBBG43KKM` } },
+			{ urlButton: { displayText: `Nomer Owner`, url : `https://wa.me/6289629015724` } },
 			{ quickReplyButton: { displayText: `💰 Donasi`, id: `${prefix}donate` } },
 			{ quickReplyButton: { displayText: `Script`, id: `${prefix}sc` } },
 		]
 		const button5 = [
-			{ callButton: { displayText: `Number Owner`, phoneNumber: `0859-2116-5857` } },
-			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/LsNzi7PDERyB9xIlW0F8Eq2` } },
+			{ callButton: { displayText: `Number Owner`, phoneNumber: `0896-2901-5724` } },
+			{ urlButton: { displayText: `Group Yusuf Bot`, url : `https://chat.whatsapp.com/GYkMntYfBjQ4tFBBG43KKM` } },
 			{ quickReplyButton: { displayText: `Back To Menu 🔙`, id: `${prefix}menu` } },
 		]
 		const buttonsSewa = [
-			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/LsNzi7PDERyB9xIlW0F8Eq2` } },
+			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/GYkMntYfBjQ4tFBBG43KKM` } },
 			{ urlButton: { displayText: `Nomer Owner`, url : `https://wa.me/6285921165857` } },
 			{ quickReplyButton: { displayText: `Donasi`, id: `${prefix}donate` } },
 			{ quickReplyButton: { displayText: `Menu`, id: `${prefix}menu` } },
 		]
 		const buttonsMenu = [
-			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/LsNzi7PDERyB9xIlW0F8Eq2` } },
-			{ urlButton: { displayText: `Nomer Owner`, url : `https://wa.me/6285921165857` } },
+			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/GYkMntYfBjQ4tFBBG43KKM` } },
+			{ urlButton: { displayText: `Nomer Owner`, url : `https://wa.me/6289629015724`` } },
 			{ quickReplyButton: { displayText: `Donasi`, id: `${prefix}donate` } },
 			{ quickReplyButton: { displayText: `Rules`, id: `${prefix}rules` } },
 			{ quickReplyButton: { displayText: `Premium`, id: `${prefix}daftarprem` } },
 		]
 		const buttonsDiamondFF = [
-			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/LsNzi7PDERyB9xIlW0F8Eq2` } },
+			{ urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/GYkMntYfBjQ4tFBBG43KKM` } },
 			{ quickReplyButton: { displayText: `Format ID`, id: `${prefix}formatid` } },
 		]
 		const buttonsAllmenu = [
-		    { urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/LsNzi7PDERyB9xIlW0F8Eq2` } },
+		    { urlButton: { displayText: `Group Izumi Bot`, url : `https://chat.whatsapp.com/GYkMntYfBjQ4tFBBG43KKM` } },
 			{ quickReplyButton: { displayText: `All Menu`, id: `${prefix}allmenu` } },
 			{ quickReplyButton: { displayText: `Rules`, id: `${prefix}rules` } },
 		]
 		const buttonsRekber = [
-			{ urlButton: { displayText: `Chat Owner`, url : `https://wa.me/6285921165857` } },
+			{ urlButton: { displayText: `Chat Owner`, url : `https://wa.me/6289629015724`` } },
 		]
         
 		const isImage = (type == 'imageMessage')
